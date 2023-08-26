@@ -1,1 +1,1 @@
-# nathangrey.dev
+# nathangrey.me
