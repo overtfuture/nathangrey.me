@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta name="generator" content="Hugo 0.117.0">
+
+  <title>
+      
+      Nathan Grey
+      
+  </title>
+
+</head>
+
+
+  <body>
+
+    
+
+	
+<div class="h-feed">
+
+	
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://nathangrey.me/2023/05/10/verifying-github-profile.html">Verifying GitHub Profile with Mastodon</a></h1>
+		
+
+		<a href="https://nathangrey.me/2023/05/10/verifying-github-profile.html" class="u-url"><time class="dt-published" datetime="2023-05-10 11:05:00 -0400">May 10, 2023</time></a>
+
+		<div class="e-content">
+			 <p>When signing up on Mastodon, I wanted to include a verified link to my GitHub. GitHub allows for adding HTML to your profile repository, but this does not come through as a verified link. I came across a great <a href="https://til.simonwillison.net/mastodon/verifying-github-on-mastodon">blog post</a> by <a href="https://til.simonwillison.net">Simon Willison</a> giving a detailed look at setting up a quick GitHub Pages redirect.</p>
+<p>The concept is make a new repo, <code>GITHUB_USERNAME.github.io</code>, then add a page called <code>index.html</code>. My redirect snippet can be viewed in my <a href="https://github.com/overtfuture/overtfuture.github.io">GitHub Repository</a>. At the time of writing, my <code>index.html</code> is as follows:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Redirecting to github.com/overtfuture&lt;/title&gt;
+    &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; URL=https://github.com/overtfuture&quot;&gt;
+    &lt;link href=&quot;https://github.com/overtfuture&quot; rel=&quot;me&quot;&gt;
+    &lt;link href=&quot;https://nathangrey.dev&quot; rel=&quot;me&quot;&gt;
+    &lt;link href=&quot;https://studioember.com&quot; rel=&quot;me&quot;&gt;
+    &lt;link href=&quot;https://mastodon.social/@ngrey&quot; rel=&quot;me&quot;&gt;
+  &lt;/head&gt;
+  &lt;body style=&quot;margin: 0; padding: 0&quot;&gt;
+    Auto redirect to GitHub
+    &lt;a href=&quot;https://github.com/overtfuture&quot;&gt;
+      github.com/overtfuture
+    &lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>This makes a bare minimum site that includes a simple page that will redirect via browser to a GitHub profile and allow for verification on Mastodon.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://nathangrey.me/2023/04/20/lets-take-this.html">Let’s Take this Offline</a></h1>
+		
+
+		<a href="https://nathangrey.me/2023/04/20/lets-take-this.html" class="u-url"><time class="dt-published" datetime="2023-04-20 18:33:02 -0400">Apr 20, 2023</time></a>
+
+		<div class="e-content">
+			 <p>A phrase that is said many times in meetings and rarely means without internet.</p>
+<p><a href="https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/">Offline Is Just Online With Extreme Latency - Jim Nielsen’s Blog</a></p>
+<blockquote>
+<p>Instead, you can think of online/offline as part of the same continuum just different measurements of latency. There are gradations of latency when you’re “online”, and “offline” is merely at the slowest end of that spectrum. For example:</p>
+<ul>
+<li>Wifi: &lt; 300ms latency</li>
+</ul>
+</blockquote>
+<ul>
+<li>3G: 1s latency</li>
+<li>Offline: 30 seconds to days of latency (until you sync back online)</li>
+</ul>
+<p>I think this is a perfect summary of how to design software in a hopeful pessimistic view that the internet does go down. There shouldn’t be a point where applications that are locally installed, just cannot show cached / downloaded files. I encountered this with Notion and quickly switched away from it after realizing it was strictly online only for practical use.</p>
+<p><a href="https://www.alphr.com/use-notion-offline/" title="How To Use Notion Offline"> How To Use Notion Offline </a> - First result when searching for <a href="https://www.notion.so">Notion</a> offline mode</p>
+<blockquote>
+<p>Technically, Notion can work offline, but it doesn’t offer a great user experience. In fact, your possibilities would be so limited that it’s easier to simply wait to regain your internet connection.</p>
+</blockquote>
+<p>The article summarizes <a href="https://www.notion.so">Notion</a> as functional offline for your last open page. Surprisingly, look and test these features, because workflows can be unknowingly interrupted at the worst times like traveling.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://nathangrey.me/2023/04/15/welcome-to-my.html" class="u-url"><time class="dt-published" datetime="2023-04-15 12:05:51 -0400">Apr 15, 2023</time></a>
+
+		<div class="e-content">
+			 <p>Welcome to my site, I&rsquo;ll be posting and cross posting to my <a href="https://mastodon.social/@ngrey">Mastodon profile</a> here. Cheers 🍻</p>
+
+		</div>
+	  </div>
+	
+
+</div>
+
+
+    
+    <br>
+<div>
+    <a style="justify-content: center; display: flex" rel="me"
+        href="https://mastodon.social/@ngrey">@ngrey@mastodon.social</a>
+</div>
+
+  </body>
+
+</html>
