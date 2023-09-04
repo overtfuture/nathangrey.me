@@ -7,6 +7,15 @@
 	"items": [
 		
 			{
+				"id": "http://overtfuture.micro.blog/2023/08/30/europe-trip.html",
+				"title": "Europe Trip",
+				"content_html": "<p>We&rsquo;re going to Europe! We are planning on posting all things about this trip here. Follow along with us under the <a href=\"https://nathangrey.me/categories/travel\">#Travel</a> category.</p>\n<ul>\n<li>UK (2 Days)</li>\n<li>Greece (8 Days)</li>\n<li>Italy (7 Days)</li>\n<li>France (3 Days)</li>\n</ul>\n<!-- raw HTML omitted -->\n",
+				"content_text": "We're going to Europe! We are planning on posting all things about this trip here. Follow along with us under the [#Travel](https://nathangrey.me/categories/travel) category.\n\n- UK (2 Days)\n- Greece (8 Days)\n- Italy (7 Days)\n- France (3 Days)\n\n<img src=\"uploads/2023/8827494e-ecc8-465b-bc1b-babc38b67eb7-1-105-c.jpeg\" width=\"450\" height=\"600\" alt=\"\">\n",
+				"date_published": "2023-08-30T11:00:00-04:00",
+				"url": "https://nathangrey.me/2023/08/30/europe-trip.html",
+				"tags": ["Travel","Personal"]
+			},
+			{
 				"id": "http://overtfuture.micro.blog/2023/05/10/verifying-github-profile.html",
 				"title": "Verifying GitHub Profile with Mastodon",
 				"content_html": "<p>When signing up on Mastodon, I wanted to include a verified link to my GitHub. GitHub allows for adding HTML to your profile repository, but this does not come through as a verified link. I came across a great <a href=\"https://til.simonwillison.net/mastodon/verifying-github-on-mastodon\">blog post</a> by <a href=\"https://til.simonwillison.net\">Simon Willison</a> giving a detailed look at setting up a quick GitHub Pages redirect.</p>\n<p>The concept is make a new repo, <code>GITHUB_USERNAME.github.io</code>, then add a page called <code>index.html</code>. My redirect snippet can be viewed in my <a href=\"https://github.com/overtfuture/overtfuture.github.io\">GitHub Repository</a>. At the time of writing, my <code>index.html</code> is as follows:</p>\n<pre><code>&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n  &lt;head&gt;\n    &lt;meta charset=&quot;utf-8&quot; /&gt;\n    &lt;title&gt;Redirecting to github.com/overtfuture&lt;/title&gt;\n    &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; URL=https://github.com/overtfuture&quot;&gt;\n    &lt;link href=&quot;https://github.com/overtfuture&quot; rel=&quot;me&quot;&gt;\n    &lt;link href=&quot;https://nathangrey.dev&quot; rel=&quot;me&quot;&gt;\n    &lt;link href=&quot;https://studioember.com&quot; rel=&quot;me&quot;&gt;\n    &lt;link href=&quot;https://mastodon.social/@ngrey&quot; rel=&quot;me&quot;&gt;\n  &lt;/head&gt;\n  &lt;body style=&quot;margin: 0; padding: 0&quot;&gt;\n    Auto redirect to GitHub\n    &lt;a href=&quot;https://github.com/overtfuture&quot;&gt;\n      github.com/overtfuture\n    &lt;/a&gt;\n  &lt;/body&gt;\n&lt;/html&gt;\n</code></pre>\n<p>This makes a bare minimum site that includes a simple page that will redirect via browser to a GitHub profile and allow for verification on Mastodon.</p>\n",
